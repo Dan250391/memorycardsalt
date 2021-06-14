@@ -132,3 +132,17 @@ prevBtn.addEventListener('click', () => {
 
   updateCurrentText();
 });
+
+
+// #####################
+// Clear cards
+// #####################
+
+const clearBtn = document.getElementById('clear');
+
+// Clear cards button
+clearBtn.addEventListener('click', () => {
+  localStorage.clear();
+  cardsContainer.innerHTML = '';
+  window.location.reload();
+});
